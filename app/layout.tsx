@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import Navbar from "./components/Navbar";
 import { CartProvider } from "./context/CartContext";
+import { ProductProvider } from "./context/ProductContext";
 import Footer from "./components/Footer";
-
 
 export const metadata: Metadata = {
   title: "Modest Shop",
@@ -24,14 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={playfair.className}>
-        <CartProvider>
-  <Navbar />
-  {children}
-  <Footer />
-</CartProvider>
-
+        <ProductProvider>
+          <CartProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </CartProvider>
+        </ProductProvider>
       </body>
     </html>
   );
 }
-
