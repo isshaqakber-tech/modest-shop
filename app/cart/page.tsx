@@ -46,10 +46,10 @@ export default function CartPage() {
       name: "Modest Shop",
       description: "Order Payment",
       handler: function (response: any) {
-        alert(
-          "Payment Successful ✅\nPayment ID: " +
-            response.razorpay_payment_id
-        );
+        // alert(
+        //   "Payment Successful ✅\nPayment ID: " +
+        //     response.razorpay_payment_id
+        // );
       },
       prefill: {
         name: "Test User",

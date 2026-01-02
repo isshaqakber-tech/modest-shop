@@ -33,8 +33,8 @@ export default function Shop() {
       : products.filter((p) => p.category === filter);
 
   return (
-    <div className="min-h-screen bg-gray-50 px-6 py-12">
-      <h1 className="text-4xl font-bold text-center mb-8">
+    <div className="min-h-screen bg-gray-200 md:bg-gray-100 px-6 py-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
         Shop Collection
       </h1>
 
@@ -47,7 +47,7 @@ export default function Shop() {
             className={`px-6 py-2 rounded-full border transition ${
               filter === cat
                 ? "bg-black text-white"
-                : "bg-white hover:bg-black hover:text-white"
+                : "bg-white text-gray-900 md:text-gray-800 hover:bg-black hover:text-white"
             }`}
           >
             {cat}

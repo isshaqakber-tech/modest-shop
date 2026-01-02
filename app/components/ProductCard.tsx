@@ -23,7 +23,7 @@ export default function ProductCard({ product }: { product: Product }) {
         className="rounded-xl object-cover"
       />
 
-      <h3 className="mt-3 font-semibold text-lg">{product.name}</h3>
+      <h3 className="mt-3 font-semibold text-lg text-gray-900">{product.name}</h3>
       <p className="text-sm text-gray-500">{product.category}</p>
       <p className="font-bold mt-2">₹{product.price}</p>
 
