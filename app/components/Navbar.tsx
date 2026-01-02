@@ -13,7 +13,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full border-b bg-white shadow-sm">
+    <nav className="w-full border-b bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-gray-900">
           Modest Shop
